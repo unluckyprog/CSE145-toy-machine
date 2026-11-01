@@ -65,10 +65,47 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(120,70)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="y"/>
+    </comp>
+    <comp lib="0" loc="(200,370)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(270,370)" name="Transistor"/>
+    <comp lib="0" loc="(380,370)" name="Transistor"/>
+    <comp lib="0" loc="(430,360)" name="Pull Resistor"/>
+    <comp lib="0" loc="(460,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="xANDy"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(70,70)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="x"/>
+    </comp>
+    <comp loc="(360,340)" name="NOT_NOR">
+      <a name="facing" val="south"/>
+    </comp>
+    <wire from="(120,70)" to="(120,80)"/>
+    <wire from="(120,80)" to="(360,80)"/>
+    <wire from="(200,370)" to="(230,370)"/>
+    <wire from="(250,100)" to="(250,350)"/>
+    <wire from="(270,370)" to="(340,370)"/>
+    <wire from="(360,340)" to="(360,350)"/>
+    <wire from="(360,80)" to="(360,120)"/>
+    <wire from="(380,370)" to="(430,370)"/>
+    <wire from="(430,360)" to="(430,370)"/>
+    <wire from="(430,370)" to="(460,370)"/>
+    <wire from="(70,100)" to="(250,100)"/>
+    <wire from="(70,70)" to="(70,100)"/>
   </circuit>
-  <circuit name="NotGate">
+  <circuit name="NOT_NOR">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="NotGate"/>
+    <a name="circuit" val="NOT_NOR"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(220,270)" name="Power">
@@ -93,9 +130,9 @@
     <wire from="(310,260)" to="(310,270)"/>
     <wire from="(310,270)" to="(340,270)"/>
   </circuit>
-  <circuit name="NorGate">
+  <circuit name="NOR_T">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="NorGate"/>
+    <a name="circuit" val="NOR_T"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(210,270)" name="Power">
@@ -127,9 +164,9 @@
     <wire from="(350,260)" to="(350,270)"/>
     <wire from="(350,270)" to="(380,270)"/>
   </circuit>
-  <circuit name="AndGate">
+  <circuit name="AND_NOR">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="AndGate"/>
+    <a name="circuit" val="AND_NOR"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(210,500)" name="Power">
@@ -154,10 +191,10 @@
       <a name="label" val="xANDy"/>
       <a name="type" val="output"/>
     </comp>
-    <comp loc="(260,460)" name="NotGate">
+    <comp loc="(260,460)" name="NOT_NOR">
       <a name="facing" val="south"/>
     </comp>
-    <comp loc="(370,460)" name="NotGate">
+    <comp loc="(370,460)" name="NOT_NOR">
       <a name="facing" val="south"/>
     </comp>
     <wire from="(210,500)" to="(240,500)"/>
@@ -170,9 +207,9 @@
     <wire from="(440,490)" to="(440,500)"/>
     <wire from="(440,500)" to="(470,500)"/>
   </circuit>
-  <circuit name="OrGate">
+  <circuit name="OR_NOR">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="OrGate"/>
+    <a name="circuit" val="OR_NOR"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(160,310)" name="Power">
@@ -197,7 +234,7 @@
       <a name="label" val="xNORy"/>
       <a name="type" val="output"/>
     </comp>
-    <comp loc="(540,310)" name="NotGate"/>
+    <comp loc="(540,310)" name="NOT_NOR"/>
     <wire from="(180,240)" to="(180,290)"/>
     <wire from="(200,310)" to="(240,310)"/>
     <wire from="(260,240)" to="(260,290)"/>
@@ -205,5 +242,73 @@
     <wire from="(300,300)" to="(300,310)"/>
     <wire from="(300,310)" to="(320,310)"/>
     <wire from="(540,310)" to="(570,310)"/>
+  </circuit>
+  <circuit name="XOR_SOP">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="XOR_SOP"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1060,410)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(250,110)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="x"/>
+    </comp>
+    <comp lib="0" loc="(300,110)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="y"/>
+    </comp>
+    <comp lib="0" loc="(370,750)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(380,410)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(440,750)" name="Transistor"/>
+    <comp lib="0" loc="(450,410)" name="Transistor"/>
+    <comp lib="0" loc="(550,750)" name="Transistor"/>
+    <comp lib="0" loc="(560,410)" name="Transistor"/>
+    <comp lib="0" loc="(600,740)" name="Pull Resistor"/>
+    <comp lib="0" loc="(610,400)" name="Pull Resistor"/>
+    <comp loc="(1010,410)" name="OR_NOR"/>
+    <comp loc="(420,710)" name="NOT_NOR">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp loc="(540,380)" name="NOT_NOR">
+      <a name="facing" val="south"/>
+    </comp>
+    <wire from="(1010,410)" to="(1060,410)"/>
+    <wire from="(250,110)" to="(250,140)"/>
+    <wire from="(250,140)" to="(250,460)"/>
+    <wire from="(250,140)" to="(430,140)"/>
+    <wire from="(250,460)" to="(420,460)"/>
+    <wire from="(300,110)" to="(300,120)"/>
+    <wire from="(300,120)" to="(300,440)"/>
+    <wire from="(300,120)" to="(540,120)"/>
+    <wire from="(300,440)" to="(530,440)"/>
+    <wire from="(370,750)" to="(400,750)"/>
+    <wire from="(380,410)" to="(410,410)"/>
+    <wire from="(420,460)" to="(420,490)"/>
+    <wire from="(420,710)" to="(420,730)"/>
+    <wire from="(430,140)" to="(430,390)"/>
+    <wire from="(440,750)" to="(510,750)"/>
+    <wire from="(450,410)" to="(520,410)"/>
+    <wire from="(530,440)" to="(530,730)"/>
+    <wire from="(540,120)" to="(540,160)"/>
+    <wire from="(540,380)" to="(540,390)"/>
+    <wire from="(550,750)" to="(600,750)"/>
+    <wire from="(560,410)" to="(610,410)"/>
+    <wire from="(600,740)" to="(600,750)"/>
+    <wire from="(600,750)" to="(690,750)"/>
+    <wire from="(610,400)" to="(610,410)"/>
+    <wire from="(610,410)" to="(790,410)"/>
+    <wire from="(690,440)" to="(690,750)"/>
+    <wire from="(690,440)" to="(790,440)"/>
+    <wire from="(790,430)" to="(790,440)"/>
   </circuit>
 </project>
