@@ -65,6 +65,41 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+<<<<<<< HEAD
+=======
+    <comp lib="0" loc="(130,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="y"/>
+    </comp>
+    <comp lib="0" loc="(170,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="CIN"/>
+    </comp>
+    <comp lib="0" loc="(710,150)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="SUM"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(710,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="CARRY"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(90,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="x"/>
+    </comp>
+    <wire from="(130,90)" to="(130,120)"/>
+    <wire from="(170,90)" to="(170,120)"/>
+    <wire from="(690,150)" to="(710,150)"/>
+    <wire from="(690,240)" to="(710,240)"/>
+    <wire from="(90,90)" to="(90,120)"/>
+>>>>>>> d10b9a22fa4b230973aaaa093fb0aa8a2c7385cc
   </circuit>
   <circuit name="NOT_NOR">
     <a name="appearance" val="logisim_evolution"/>
