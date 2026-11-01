@@ -71,22 +71,95 @@
     <a name="circuit" val="NotGate"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(240,270)" name="Power">
+    <comp lib="0" loc="(220,270)" name="Power">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="0" loc="(260,250)" name="Pin">
+    <comp lib="0" loc="(260,220)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="south"/>
+      <a name="label" val="x"/>
     </comp>
     <comp lib="0" loc="(280,270)" name="Transistor"/>
     <comp lib="0" loc="(310,260)" name="Pull Resistor"/>
     <comp lib="0" loc="(340,270)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
+      <a name="label" val="xNOT"/>
       <a name="type" val="output"/>
     </comp>
+    <wire from="(220,270)" to="(240,270)"/>
+    <wire from="(260,220)" to="(260,250)"/>
     <wire from="(280,270)" to="(310,270)"/>
     <wire from="(310,260)" to="(310,270)"/>
     <wire from="(310,270)" to="(340,270)"/>
+  </circuit>
+  <circuit name="NorGate">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="NorGate"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(210,270)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(230,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="x"/>
+    </comp>
+    <comp lib="0" loc="(250,270)" name="Transistor"/>
+    <comp lib="0" loc="(310,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="y"/>
+    </comp>
+    <comp lib="0" loc="(330,270)" name="Transistor"/>
+    <comp lib="0" loc="(350,260)" name="Pull Resistor"/>
+    <comp lib="0" loc="(380,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="xNORy"/>
+      <a name="type" val="output"/>
+    </comp>
+    <wire from="(230,200)" to="(230,250)"/>
+    <wire from="(250,270)" to="(290,270)"/>
+    <wire from="(310,200)" to="(310,250)"/>
+    <wire from="(330,270)" to="(350,270)"/>
+    <wire from="(350,260)" to="(350,270)"/>
+    <wire from="(350,270)" to="(380,270)"/>
+  </circuit>
+  <circuit name="AndGate">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="AndGate"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(100,260)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(150,140)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="x"/>
+    </comp>
+    <comp lib="0" loc="(170,260)" name="Transistor"/>
+    <comp lib="0" loc="(260,140)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="y"/>
+    </comp>
+    <comp lib="0" loc="(280,260)" name="Transistor"/>
+    <comp lib="0" loc="(330,250)" name="Pull Resistor"/>
+    <comp lib="0" loc="(360,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="xANDy"/>
+      <a name="type" val="output"/>
+    </comp>
+    <wire from="(100,260)" to="(130,260)"/>
+    <wire from="(150,140)" to="(150,240)"/>
+    <wire from="(170,260)" to="(240,260)"/>
+    <wire from="(260,140)" to="(260,240)"/>
+    <wire from="(280,260)" to="(330,260)"/>
+    <wire from="(330,250)" to="(330,260)"/>
+    <wire from="(330,260)" to="(360,260)"/>
   </circuit>
 </project>
