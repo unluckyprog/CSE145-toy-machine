@@ -646,4 +646,52 @@
     <wire from="(450,170)" to="(460,170)"/>
     <wire from="(450,270)" to="(460,270)"/>
   </circuit>
+  <circuit name="FULL_ADDER_B">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="FULL_ADDER_B"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(120,140)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="y"/>
+    </comp>
+    <comp lib="0" loc="(430,180)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CIN"/>
+    </comp>
+    <comp lib="0" loc="(720,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="SUM"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(770,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="COUT"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(90,140)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="x"/>
+    </comp>
+    <comp lib="1" loc="(760,240)" name="OR Gate"/>
+    <comp loc="(350,160)" name="HALF_ADDER"/>
+    <comp loc="(660,160)" name="HALF_ADDER"/>
+    <wire from="(120,140)" to="(120,180)"/>
+    <wire from="(120,180)" to="(130,180)"/>
+    <wire from="(350,160)" to="(440,160)"/>
+    <wire from="(350,180)" to="(350,260)"/>
+    <wire from="(350,260)" to="(710,260)"/>
+    <wire from="(430,180)" to="(440,180)"/>
+    <wire from="(660,160)" to="(720,160)"/>
+    <wire from="(660,180)" to="(670,180)"/>
+    <wire from="(670,180)" to="(670,220)"/>
+    <wire from="(670,220)" to="(710,220)"/>
+    <wire from="(760,240)" to="(770,240)"/>
+    <wire from="(90,140)" to="(90,160)"/>
+    <wire from="(90,160)" to="(130,160)"/>
+  </circuit>
 </project>
